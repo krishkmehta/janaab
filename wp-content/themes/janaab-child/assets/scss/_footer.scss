@@ -1,0 +1,117 @@
+// footer style
+
+/*
+.site-footer{	
+	.footer-widgets{
+		ul{
+			li{
+				position: relative;
+				&:before{
+					position: absolute;
+					left: 0;
+					margin: 0;
+					top: 0;
+					@include common-transition;
+				}
+				&:hover,&:focus{
+					&:before{@include transform(scale(1.1));}
+				}
+				a{
+					text-decoration: none;
+					outline: none;
+					&:hover{
+						color: $color-hover;
+					}
+				}
+			}
+		}
+	}
+}
+*/
+
+.site-footer{
+	background-color: $color-site;
+	.col-full{
+		background-color: $color-site;
+		color: $color-white;
+		a{
+			color: $color-white;
+			text-decoration: none;
+			&:hover,&:focus{
+				outline: none;
+				color: $color-hover;
+			}
+		}
+		.text-white{color: $color-white;}
+		ul{
+			li{
+				position: relative;
+				padding: 0;
+				&:before{
+					display: none;
+				}
+				a{
+					position: relative;
+					&:before{
+						content: '';
+						width: 0;
+						height: 2px;
+						background-color: $color-hover;
+						position: absolute;
+						top: 10px;
+						left: 0;
+						@include common-transition(all 0.3s ease-out);
+					}
+					&:hover,&:focus{
+						padding-left: 1rem;
+						&:before{
+							width: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.site-info{
+		text-align: center;
+		border-top: 1px solid $color-hover;
+		padding: 1rem 0 0;
+	}
+	.social-links{
+		@extend %d-flex;
+		@extend %flex-wrap;
+		.fa{font: normal normal normal 14px/1 FontAwesome;}
+		a{
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			color: $color-hover;
+			border: 1px solid $color-hover;
+			border-radius: 100%;
+			margin: 3px;
+			&:hover,&:focus{
+				background-color: $color-hover;
+				color: $color-white;
+			}
+		}
+	}	
+}
+.f-info {
+	@extend %d-flex;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	.icon{
+		height: 34px;
+		width: 34px;
+		text-align: center;
+		border-radius: 100%;
+		background-color: $color-hover;
+		border: 1px solid $color-hover;
+		margin-right: .5rem;
+		font-size: .875rem;
+	}
+	.text{
+		width: calc(100% - 42px);
+	}
+}

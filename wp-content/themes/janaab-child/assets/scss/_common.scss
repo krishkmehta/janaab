@@ -1,0 +1,49 @@
+/* common class */
+// font-family: 'Poppins', sans-serif;
+
+body{
+	font-size: 1rem;
+	line-height: 2rem;
+	font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 1.5rem;
+}
+h1,.h1{font-size: 3rem;}
+h2,.h2{font-size: 2rem;}
+h3,.h3{font-size: 1.5rem;}
+h4,.h4{font-size: 1rem;}
+a{
+	transition: all 0.3s ease-out;
+	outline: none;
+	display: inline-block;
+	text-decoration: none;
+}
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+img{max-width: 100%;}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem;
+}
+
+.text-gray{color: $color-gray;}
+.text-white{color: $color-white;}
+
+.bg-gray{background-color: $color-gray;}
+.bg-black{background-color: $color-site;}
+
+
+.common-sec{
+	padding: 3rem 0;
+}
+.common-btn{
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	color: $color-white;
+	text-transform: capitalize;
+}

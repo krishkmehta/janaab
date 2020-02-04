@@ -1,0 +1,18 @@
+// header style
+
+.site-header{
+	background-color: $color-site;
+	li{
+		&:hover,&:focus{
+			outline: none;
+		}
+	}
+	a{
+		color:$color-white;
+		&:hover,&:focus{
+			color:$color-hover !important;
+			text-decoration: none !important;
+			outline: none;
+		}
+	}
+}

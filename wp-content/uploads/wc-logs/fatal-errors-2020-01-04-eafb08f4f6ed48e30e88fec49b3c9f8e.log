@@ -1,0 +1,6 @@
+2020-01-04T04:18:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in F:\xampp\htdocs\janaab\wp-includes\wp-db.php on line 2030
+
+2020-01-04T07:02:53+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 50
+
+2020-01-04T07:02:53+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 50
+

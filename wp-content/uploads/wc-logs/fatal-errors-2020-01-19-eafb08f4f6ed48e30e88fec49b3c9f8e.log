@@ -1,0 +1,118 @@
+2020-01-19T09:06:07+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:09+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:20+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:40+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function wp_equeue_style() in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php:18
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#4 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#6 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\general-template.php(2879): do_action('wp_head')
+#8 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php(18): wp_head()
+#9 F:\xampp\htdocs\janaab\wp-includes\template.php(722): require_once('F:\\xam in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 18
+
+2020-01-19T09:09:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_register_style(), 1 passed in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php on line 19 and at least 2 expected in F:\xampp\htdocs\janaab\wp-includes\functions.wp-styles.php:125
+Stack trace:
+#0 F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\functions.php(19): wp_register_style('owl-carousel')
+#1 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): adding_required_scripts('')
+#2 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#3 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 F:\xampp\htdocs\janaab\wp-includes\script-loader.php(2670): do_action('wp_enqueue_scri...')
+#5 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(288): wp_enqueue_scripts('')
+#6 F:\xampp\htdocs\janaab\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#7 F:\xampp\htdocs\janaab\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#8 F:\xampp\ in F:\xampp\htdocs\janaab\wp-includes\functions.wp-styles.php on line 125
+
+2020-01-19T09:30:07+00:00 CRITICAL syntax error, unexpected end of file in F:\xampp\htdocs\janaab\wp-content\themes\janaab-child\header.php on line 102
+

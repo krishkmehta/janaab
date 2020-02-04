@@ -1,0 +1,185 @@
+/* variables */
+.site-footer .social-links, .f-info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.site-footer .social-links {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* common class */
+body {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: 'Poppins', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem; }
+
+h1, .h1 {
+  font-size: 3rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.5rem; }
+
+h4, .h4 {
+  font-size: 1rem; }
+
+a {
+  transition: all 0.3s ease-out;
+  outline: none;
+  display: inline-block;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem; }
+
+.text-gray {
+  color: #dbdfe9; }
+
+.text-white {
+  color: #ffffff; }
+
+.bg-gray {
+  background-color: #dbdfe9; }
+
+.bg-black {
+  background-color: #040404; }
+
+.common-sec {
+  padding: 3rem 0; }
+
+.common-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  text-transform: capitalize; }
+
+.site-header {
+  background-color: #040404; }
+  .site-header li:hover, .site-header li:focus {
+    outline: none; }
+  .site-header a {
+    color: #ffffff; }
+    .site-header a:hover, .site-header a:focus {
+      color: #cea939 !important;
+      text-decoration: none !important;
+      outline: none; }
+
+/*
+.site-footer{	
+	.footer-widgets{
+		ul{
+			li{
+				position: relative;
+				&:before{
+					position: absolute;
+					left: 0;
+					margin: 0;
+					top: 0;
+					@include common-transition;
+				}
+				&:hover,&:focus{
+					&:before{@include transform(scale(1.1));}
+				}
+				a{
+					text-decoration: none;
+					outline: none;
+					&:hover{
+						color: $color-hover;
+					}
+				}
+			}
+		}
+	}
+}
+*/
+.site-footer {
+  background-color: #040404; }
+  .site-footer .col-full {
+    background-color: #040404;
+    color: #ffffff; }
+    .site-footer .col-full a {
+      color: #ffffff;
+      text-decoration: none; }
+      .site-footer .col-full a:hover, .site-footer .col-full a:focus {
+        outline: none;
+        color: #cea939; }
+    .site-footer .col-full .text-white {
+      color: #ffffff; }
+    .site-footer .col-full ul li {
+      position: relative;
+      padding: 0; }
+      .site-footer .col-full ul li:before {
+        display: none; }
+      .site-footer .col-full ul li a {
+        position: relative; }
+        .site-footer .col-full ul li a:before {
+          content: '';
+          width: 0;
+          height: 2px;
+          background-color: #cea939;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+        .site-footer .col-full ul li a:hover, .site-footer .col-full ul li a:focus {
+          padding-left: 1rem; }
+          .site-footer .col-full ul li a:hover:before, .site-footer .col-full ul li a:focus:before {
+            width: 10px; }
+  .site-footer .site-info {
+    text-align: center;
+    border-top: 1px solid #cea939;
+    padding: 1rem 0 0; }
+  .site-footer .social-links .fa {
+    font: normal normal normal 14px/1 FontAwesome; }
+  .site-footer .social-links a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #cea939;
+    border: 1px solid #cea939;
+    border-radius: 100%;
+    margin: 3px; }
+    .site-footer .social-links a:hover, .site-footer .social-links a:focus {
+      background-color: #cea939;
+      color: #ffffff; }
+
+.f-info {
+  margin-bottom: 1rem;
+  cursor: pointer; }
+  .f-info .icon {
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #cea939;
+    border: 1px solid #cea939;
+    margin-right: .5rem;
+    font-size: .875rem; }
+  .f-info .text {
+    width: calc(100% - 42px); }
+
+/*# sourceMappingURL=main.css.map */
