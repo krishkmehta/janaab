@@ -30,9 +30,12 @@
 */
 
 .site-footer{
-	background-color: $color-site;
+	background-color: $color-hover2;
+	background-image: url(../images/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	.col-full{
-		background-color: $color-site;
+		background: none;
 		color: $color-white;
 		a{
 			color: $color-white;
@@ -74,25 +77,19 @@
 	}
 	.site-info{
 		text-align: center;
-		border-top: 1px solid $color-hover;
-		padding: 1rem 0 0;
+		padding: 1rem 0;
 	}
 	.social-links{
 		@extend %d-flex;
 		@extend %flex-wrap;
-		.fa{font: normal normal normal 14px/1 FontAwesome;}
-		a{
-			width: 35px;
-			height: 35px;
-			line-height: 35px;
+		.fa{font: normal normal normal 16px/1 FontAwesome;}
+		a{			
 			text-align: center;
-			color: $color-hover;
-			border: 1px solid $color-hover;
-			border-radius: 100%;
-			margin: 3px;
+			color: $color-white;
+			margin: 0 1rem 1rem 0;
+			font-size: 1rem;
 			&:hover,&:focus{
-				background-color: $color-hover;
-				color: $color-white;
+				color: $color-hover;
 			}
 		}
 	}	
@@ -101,13 +98,10 @@
 	@extend %d-flex;
 	margin-bottom: 1rem;
 	cursor: pointer;
+	.fa{font: normal normal normal 16px/1 FontAwesome;}
 	.icon{
-		height: 34px;
-		width: 34px;
 		text-align: center;
-		border-radius: 100%;
-		background-color: $color-hover;
-		border: 1px solid $color-hover;
+		color: $color-hover;
 		margin-right: .5rem;
 		font-size: .875rem;
 	}
