@@ -1,6 +1,7 @@
 /* common class */
-// font-family: 'Poppins', sans-serif;
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+*{box-sizing: border-box;}
 body{
 	font-size: 1rem;
 	line-height: 2rem;
@@ -8,6 +9,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
 	margin-bottom: 1.5rem;
+	font-family: 'Poppins', sans-serif;	
 }
 h1,.h1{font-size: 3rem;}
 h2,.h2{font-size: 2rem;}
@@ -51,9 +53,25 @@ ul{
 .widget{
 	margin-bottom: 1rem;
 }
+.text-center{text-align: center !important;}
 
 .widget .widget-title, 
 .widget .widgettitle{
 	font-size: 1.1rem;
 	padding-bottom: 0;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.col-lg-6{
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
 }

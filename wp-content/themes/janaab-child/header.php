@@ -83,6 +83,7 @@
 					margin:10,
 					nav:true,
 					items: 1,
+					autoHeight: true,
 					dots: true
 				})
 			});

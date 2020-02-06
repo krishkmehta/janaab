@@ -15,6 +15,7 @@ function PREFIX_remove_scripts() {
 add_action( 'wp_enqueue_scripts', 'PREFIX_remove_scripts', 20 );
 
 function adding_required_scripts() {
+	// wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri() .'/assets/css/bootstrap.min.css', array(), 1.1, 'all' );
 	wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() .'/assets/css/owl.carousel.min.css' );
 	wp_enqueue_style( 'owl-carousel-theme', get_stylesheet_directory_uri() .'/assets/css/owl.theme.css' );
 	

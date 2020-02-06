@@ -6,27 +6,43 @@
 get_header(); ?>
 
 </div><!-- col-full -->
-<section class="full-width-img-sec farmers-img-sec">
-	<div class="row col-2">
-		<div class="col-lg-6 p-0 block">
-			<div class="img h-100">
-				<img src="https://googlex.in/afarmerforyou/wp-content/uploads/2020/01/Hath-min.jpg" alt="Image">
-			</div>
-		</div><!-- col -->
 
-		<div class="col-lg-6 p-0 block">
-			<div class="entry-txt-bx bg-gray">
-				<div class="entry-txt">
-					<h2 class="entry-title mb-3">Farmers:</h2>
-					<div class="desc">
-						<p>Gärtnerinnenhof Blumberg. Committed with heart and hand to the organic cultivation of various types of fruit and vegetables and they would be happy if you visit them.</p>
-						<p>Gärtnerinnenhof Blumberg, Krummenseer Straße 5a 16356 Blumberg (29 km from Berlin 40 min by car) their instagram: <strong>@gaertnerinnenhof_blumberg</strong></p>
+
+<section class="common-sec quality-redefined-sec">
+	<div class="col-full">
+		<h2 class="text-center">Quality Redefined</h2>
+		<p class="text-center">Spoin eravida gibh sel velit tuctor aliquet. Aenean dyfi iysda asslicikoi <br> tudin lorem quis bibendum auctor</p>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="img-text-bx">
+					<div class="img">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/img1.jpg" alt="Image">
 					</div>
-				</div><!-- entry-txt -->
-			</div><!-- entry-content -->
-		</div><!-- col -->		
-	</div>	
-</section>
+					<h2 class="title">Wall Covering</h2>
+					<p>Alienum phaedrum torquatos nec eu, vis detraxit periculisin mei. Mei an pericula euripidis, hinc partem ei est. Vix aperiri consequat an pericula .</p>
+					<div class="link">
+						<a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Explore</a>
+					</div>
+				</div><!-- img-text-bx -->
+			</div><!-- col -->
+			
+			<div class="col-lg-6">
+				<div class="img-text-bx">
+					<div class="img">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/img1.jpg" alt="Image">
+					</div>
+					<h2 class="title">Wallart</h2>
+					<p>Alienum phaedrum torquatos nec eu, vis detraxit periculisin mei. Mei an pericula euripidis, hinc partem ei est. Vix aperiri consequat an pericula .</p>
+					<div class="link">
+						<a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Explore</a>
+					</div>
+				</div><!-- img-text-bx -->
+			</div><!-- col -->
+		</div><!-- row -->
+	</div><!-- col-full -->
+</section><!-- common-sec -->
+
 
 <div class="col-full">
 <?php /* ?>
@@ -39,7 +55,7 @@ get_header(); ?>
 
 <div id="primary" class="homepage-section">
 	<main id="main" class="site-main" role="main">
-		<?php do_action( 'homepage' ); ?>
+		<?php //do_action( 'homepage' ); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

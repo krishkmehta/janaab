@@ -50,34 +50,44 @@
 			li{
 				position: relative;
 				padding: 0;
+				margin-bottom: 1em;
+				line-height: 1.41575em;
 				&:before{
 					display: none;
 				}
 				a{
 					position: relative;
+					padding-left: 1rem;
 					&:before{
-						content: '';
-						width: 0;
-						height: 2px;
-						background-color: $color-hover;
+						content: '\f105';
+						font: normal normal normal 14px/1 FontAwesome;
+						color: $color-hover;
 						position: absolute;
-						top: 10px;
+						top: 3px;
 						left: 0;
 						@include common-transition(all 0.3s ease-out);
 					}
 					&:hover,&:focus{
-						padding-left: 1rem;
 						&:before{
-							width: 10px;
+							@include transform(translateX(3px));
 						}
 					}
 				}
 			}
 		}
+		.footer-widgets{
+			padding: 70px 5.874em;
+		}
 	}
 	.site-info{
 		text-align: center;
-		padding: 1rem 0;
+		padding: 1rem;
+		background-color: #d4d0af;
+		color: $color-site;
+		a{
+			color: $color-site;
+			&:hover,&:focus{color: $color-hover2;}
+		}
 	}
 	.social-links{
 		@extend %d-flex;
