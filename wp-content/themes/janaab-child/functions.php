@@ -162,7 +162,6 @@ function janaab_slider() {
 }
 add_action( 'init', 'janaab_slider', 0 );
 
-
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
