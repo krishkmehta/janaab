@@ -30,9 +30,12 @@
 */
 
 .site-footer{
-	background-color: $color-site;
+	background-color: $color-hover2;
+	background-image: url(../images/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	.col-full{
-		background-color: $color-site;
+		background: none;
 		color: $color-white;
 		a{
 			color: $color-white;
@@ -47,52 +50,56 @@
 			li{
 				position: relative;
 				padding: 0;
+				margin-bottom: 1em;
+				line-height: 1.41575em;
 				&:before{
 					display: none;
 				}
 				a{
 					position: relative;
+					padding-left: 1rem;
 					&:before{
-						content: '';
-						width: 0;
-						height: 2px;
-						background-color: $color-hover;
+						content: '\f105';
+						font: normal normal normal 14px/1 FontAwesome;
+						color: $color-hover;
 						position: absolute;
-						top: 10px;
+						top: 3px;
 						left: 0;
 						@include common-transition(all 0.3s ease-out);
 					}
 					&:hover,&:focus{
-						padding-left: 1rem;
 						&:before{
-							width: 10px;
+							@include transform(translateX(3px));
 						}
 					}
 				}
 			}
 		}
+		.footer-widgets{
+			padding: 70px 5.874em;
+		}
 	}
 	.site-info{
 		text-align: center;
-		border-top: 1px solid $color-hover;
-		padding: 1rem 0 0;
+		padding: 1rem;
+		background-color: #d4d0af;
+		color: $color-site;
+		a{
+			color: $color-site;
+			&:hover,&:focus{color: $color-hover2;}
+		}
 	}
 	.social-links{
 		@extend %d-flex;
 		@extend %flex-wrap;
-		.fa{font: normal normal normal 14px/1 FontAwesome;}
-		a{
-			width: 35px;
-			height: 35px;
-			line-height: 35px;
+		.fa{font: normal normal normal 16px/1 FontAwesome;}
+		a{			
 			text-align: center;
-			color: $color-hover;
-			border: 1px solid $color-hover;
-			border-radius: 100%;
-			margin: 3px;
+			color: $color-white;
+			margin: 0 1rem 1rem 0;
+			font-size: 1rem;
 			&:hover,&:focus{
-				background-color: $color-hover;
-				color: $color-white;
+				color: $color-hover;
 			}
 		}
 	}	
@@ -101,13 +108,10 @@
 	@extend %d-flex;
 	margin-bottom: 1rem;
 	cursor: pointer;
+	.fa{font: normal normal normal 16px/1 FontAwesome;}
 	.icon{
-		height: 34px;
-		width: 34px;
 		text-align: center;
-		border-radius: 100%;
-		background-color: $color-hover;
-		border: 1px solid $color-hover;
+		color: $color-hover;
 		margin-right: .5rem;
 		font-size: .875rem;
 	}

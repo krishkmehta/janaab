@@ -15,8 +15,8 @@ if ( ! function_exists( 'storefront_display_comments' ) ) {
 		// If comments are open or we have at least one comment, load up the comment template.
 		if ( comments_open() || 0 !== intval( get_comments_number() ) ) :
 			comments_template();
-		endif;
-	}
+	endif;
+}
 }
 
 if ( ! function_exists( 'storefront_comment' ) ) {
@@ -39,43 +39,43 @@ if ( ! function_exists( 'storefront_comment' ) ) {
 		?>
 		<<?php echo esc_attr( $tag ); ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID(); ?>">
 		<div class="comment-body">
-		<div class="comment-meta commentmetadata">
-			<div class="comment-author vcard">
-			<?php echo get_avatar( $comment, 128 ); ?>
-			<?php printf( wp_kses_post( '<cite class="fn">%s</cite>', 'storefront' ), get_comment_author_link() ); ?>
-			</div>
-			<?php if ( '0' === $comment->comment_approved ) : ?>
-				<em class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'storefront' ); ?></em>
-				<br />
-			<?php endif; ?>
+			<div class="comment-meta commentmetadata">
+				<div class="comment-author vcard">
+					<?php echo get_avatar( $comment, 128 ); ?>
+					<?php printf( wp_kses_post( '<cite class="fn">%s</cite>', 'storefront' ), get_comment_author_link() ); ?>
+				</div>
+				<?php if ( '0' === $comment->comment_approved ) : ?>
+					<em class="comment-awaiting-moderation"><?php esc_attr_e( 'Your comment is awaiting moderation.', 'storefront' ); ?></em>
+					<br />
+				<?php endif; ?>
 
-			<a href="<?php echo esc_url( htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ); ?>" class="comment-date">
-				<?php echo '<time datetime="' . get_comment_date( 'c' ) . '">' . get_comment_date() . '</time>'; ?>
-			</a>
-		</div>
-		<?php if ( 'div' !== $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID(); ?>" class="comment-content">
-		<?php endif; ?>
-		<div class="comment-text">
-		<?php comment_text(); ?>
-		</div>
-		<div class="reply">
-		<?php
-		comment_reply_link(
-			array_merge(
-				$args, array(
-					'add_below' => $add_below,
-					'depth'     => $depth,
-					'max_depth' => $args['max_depth'],
-				)
-			)
-		);
-		?>
-		<?php edit_comment_link( __( 'Edit', 'storefront' ), '  ', '' ); ?>
-		</div>
-		</div>
-		<?php if ( 'div' !== $args['style'] ) : ?>
-		</div>
+				<a href="<?php echo esc_url( htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ); ?>" class="comment-date">
+					<?php echo '<time datetime="' . get_comment_date( 'c' ) . '">' . get_comment_date() . '</time>'; ?>
+				</a>
+			</div>
+			<?php if ( 'div' !== $args['style'] ) : ?>
+				<div id="div-comment-<?php comment_ID(); ?>" class="comment-content">
+				<?php endif; ?>
+				<div class="comment-text">
+					<?php comment_text(); ?>
+				</div>
+				<div class="reply">
+					<?php
+					comment_reply_link(
+						array_merge(
+							$args, array(
+								'add_below' => $add_below,
+								'depth'     => $depth,
+								'max_depth' => $args['max_depth'],
+							)
+						)
+					);
+					?>
+					<?php edit_comment_link( __( 'Edit', 'storefront' ), '  ', '' ); ?>
+				</div>
+			</div>
+			<?php if ( 'div' !== $args['style'] ) : ?>
+			</div>
 		<?php endif; ?>
 		<?php
 	}
@@ -105,20 +105,20 @@ if ( ! function_exists( 'storefront_footer_widgets' ) ) {
 			if ( isset( $columns ) ) :
 				?>
 				<div class=<?php echo '"footer-widgets row-' . esc_attr( $row ) . ' col-' . esc_attr( $columns ) . ' fix"'; ?>>
-				<?php
-				for ( $column = 1; $column <= $columns; $column++ ) :
-					$footer_n = $column + $regions * ( $row - 1 );
+					<?php
+					for ( $column = 1; $column <= $columns; $column++ ) :
+						$footer_n = $column + $regions * ( $row - 1 );
 
-					if ( is_active_sidebar( 'footer-' . esc_attr( $footer_n ) ) ) :
-						?>
-					<div class="block footer-widget-<?php echo esc_attr( $column ); ?>">
-						<?php dynamic_sidebar( 'footer-' . esc_attr( $footer_n ) ); ?>
-					</div>
-						<?php
-					endif;
-				endfor;
-				?>
-			</div><!-- .footer-widgets.row-<?php echo esc_attr( $row ); ?> -->
+						if ( is_active_sidebar( 'footer-' . esc_attr( $footer_n ) ) ) :
+							?>
+							<div class="block footer-widget-<?php echo esc_attr( $column ); ?>">
+								<?php dynamic_sidebar( 'footer-' . esc_attr( $footer_n ) ); ?>
+							</div>
+							<?php
+						endif;
+					endfor;
+					?>
+				</div><!-- .footer-widgets.row-<?php echo esc_attr( $row ); ?> -->
 				<?php
 				unset( $columns );
 			endif;
@@ -137,7 +137,7 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 		$links_output = '';
 
 		if ( apply_filters( 'storefront_credit_link', true ) ) {
-			$links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="author">' . esc_html__( 'Built with Storefront &amp; WooCommerce', 'storefront' ) . '</a>.';
+			$links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="author">' . esc_html__( 'Janaab Wallcovering &amp; wallart. All Rights Reserved' ) . '</a>.';
 		}
 
 		if ( apply_filters( 'storefront_privacy_policy_link', true ) && function_exists( 'the_privacy_policy_link' ) ) {
@@ -148,10 +148,9 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 		$links_output = apply_filters( 'storefront_credit_links_output', $links_output );
 		?>
 		<div class="site-info">
-			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = '&copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
+			<?php echo esc_html( apply_filters( 'storefront_copyright_text', $content = 'Copyright &copy; ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ) ) ); ?>
 
-			<?php if ( ! empty( $links_output ) ) { ?>
-				<br />
+			<?php if ( ! empty( $links_output ) ) { ?>				
 				<?php echo wp_kses_post( $links_output ); ?>
 			<?php } ?>
 		</div><!-- .site-info -->
@@ -168,11 +167,11 @@ if ( ! function_exists( 'storefront_header_widget_region' ) ) {
 	function storefront_header_widget_region() {
 		if ( is_active_sidebar( 'header-1' ) ) {
 			?>
-		<div class="header-widget-region" role="complementary">
-			<div class="col-full">
-				<?php dynamic_sidebar( 'header-1' ); ?>
+			<div class="header-widget-region" role="complementary">
+				<div class="col-full">
+					<?php dynamic_sidebar( 'header-1' ); ?>
+				</div>
 			</div>
-		</div>
 			<?php
 		}
 	}
@@ -234,7 +233,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 	function storefront_primary_navigation() {
 		?>
 		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
-		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( 'Menu', 'storefront' ) ) ); ?></span></button>
+			<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( 'Menu', 'storefront' ) ) ); ?></span></button>
 			<?php
 			wp_nav_menu(
 				array(
@@ -267,12 +266,12 @@ if ( ! function_exists( 'storefront_secondary_navigation' ) ) {
 			?>
 			<nav class="secondary-navigation" role="navigation" aria-label="<?php esc_html_e( 'Secondary Navigation', 'storefront' ); ?>">
 				<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'secondary',
-							'fallback_cb'    => '',
-						)
-					);
+				wp_nav_menu(
+					array(
+						'theme_location' => 'secondary',
+						'fallback_cb'    => '',
+					)
+				);
 				?>
 			</nav><!-- #site-navigation -->
 			<?php
@@ -346,12 +345,12 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php
-				wp_link_pages(
-					array(
-						'before' => '<div class="page-links">' . __( 'Pages:', 'storefront' ),
-						'after'  => '</div>',
-					)
-				);
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'storefront' ),
+					'after'  => '</div>',
+				)
+			);
 			?>
 		</div><!-- .entry-content -->
 		<?php
@@ -367,7 +366,7 @@ if ( ! function_exists( 'storefront_post_header' ) ) {
 	function storefront_post_header() {
 		?>
 		<header class="entry-header">
-		<?php
+			<?php
 
 		/**
 		 * Functions hooked in to storefront_post_header_before action.
@@ -384,9 +383,9 @@ if ( ! function_exists( 'storefront_post_header' ) ) {
 
 		do_action( 'storefront_post_header_after' );
 		?>
-		</header><!-- .entry-header -->
-		<?php
-	}
+	</header><!-- .entry-header -->
+	<?php
+}
 }
 
 if ( ! function_exists( 'storefront_post_content' ) ) {
@@ -398,7 +397,7 @@ if ( ! function_exists( 'storefront_post_content' ) ) {
 	function storefront_post_content() {
 		?>
 		<div class="entry-content">
-		<?php
+			<?php
 
 		/**
 		 * Functions hooked in to storefront_post_content_before action.
@@ -424,9 +423,9 @@ if ( ! function_exists( 'storefront_post_content' ) ) {
 			)
 		);
 		?>
-		</div><!-- .entry-content -->
-		<?php
-	}
+	</div><!-- .entry-content -->
+	<?php
+}
 }
 
 if ( ! function_exists( 'storefront_post_meta' ) ) {
@@ -458,10 +457,10 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 		$output_time_string = sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>', esc_url( get_permalink() ), $time_string );
 
 		$posted_on = '
-			<span class="posted-on">' .
-			/* translators: %s: post date */
-			sprintf( __( 'Posted on %s', 'storefront' ), $output_time_string ) .
-			'</span>';
+		<span class="posted-on">' .
+		/* translators: %s: post date */
+		sprintf( __( 'Posted on %s', 'storefront' ), $output_time_string ) .
+		'</span>';
 
 		// Author.
 		$author = sprintf(
@@ -545,15 +544,15 @@ if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
 
 		<aside class="entry-taxonomy">
 			<?php if ( $categories_list ) : ?>
-			<div class="cat-links">
-				<?php echo esc_html( _n( 'Category:', 'Categories:', count( get_the_category() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $categories_list ); ?>
-			</div>
+				<div class="cat-links">
+					<?php echo esc_html( _n( 'Category:', 'Categories:', count( get_the_category() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $categories_list ); ?>
+				</div>
 			<?php endif; ?>
 
 			<?php if ( $tags_list ) : ?>
-			<div class="tags-links">
-				<?php echo esc_html( _n( 'Tag:', 'Tags:', count( get_the_tags() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $tags_list ); ?>
-			</div>
+				<div class="tags-links">
+					<?php echo esc_html( _n( 'Tag:', 'Tags:', count( get_the_tags() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $tags_list ); ?>
+				</div>
 			<?php endif; ?>
 		</aside>
 
