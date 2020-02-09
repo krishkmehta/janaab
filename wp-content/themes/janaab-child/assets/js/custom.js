@@ -13,9 +13,7 @@ jQuery(document).ready(function($){
 		});
 	});
 
-
-
-	// slider
+	
 	//inspirations-slider
 	$('.inspirations-slider').slick({		
 		autoplay: false,
@@ -40,5 +38,22 @@ jQuery(document).ready(function($){
 			}
 		}
 		]
+	});
+
+	// all new slider
+	$('.all-new-for-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: true,
+		asNavFor: '.all-new-nav-slider'
+	});
+	$('.all-new-nav-slider').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.all-new-for-slider',
+		dots: false,
+		arrows: false,
+		focusOnSelect: true
 	});
 })

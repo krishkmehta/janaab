@@ -44,6 +44,28 @@
 	align-items: center;
 }
 
-.inspirations-bx{
+.inspirations-bx,
+.all-new-bx-img{
 	padding: 10px;
+}
+
+.all-new-sec{
+	.col-full{padding-right: 0;}
+	.row{margin:0;}
+}
+.all-new-for-slider{
+	.slick-arrow{}
+	button.slick-prev{
+		top: auto;
+		left: 0;
+		bottom: -30px;
+		transform: none;
+	}
+	button.slick-next{
+		top: auto;
+		left: 60px;
+		right: auto;
+		bottom: -30px;
+		transform: none;
+	}
 }
