@@ -43,6 +43,15 @@ get_header(); ?>
 	</div><!-- col-full -->
 </section><!-- common-sec -->
 
+<section class="common-sec quality-redefined-sec">
+	<div class="col-full">
+		<h2 class="text-center">Quality Redefined</h2>
+		<p class="text-center">Spoin eravida gibh sel velit tuctor aliquet. Aenean dyfi iysda asslicikoi tudin
+		lorem quis bibendum auctor</p>
+
+	</div><!-- col-full -->
+</section><!-- common-sec -->
+
 
 <div class="col-full">
 <?php /* ?>
