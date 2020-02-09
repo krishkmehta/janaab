@@ -30,3 +30,20 @@
 	.row{margin: 0 -5px;}
 	.col-lg-4{padding: 0 5px;}
 }
+
+.pattern-books-bx{
+	padding: 5rem 1rem;
+	color: #fff;
+	.common-btn{margin: 0.5rem}
+}
+
+.our-work-sec{
+	min-height: 500px;
+	@extend %d-flex;
+	@extend %flex-wrap;
+	align-items: center;
+}
+
+.inspirations-bx{
+	padding: 10px;
+}

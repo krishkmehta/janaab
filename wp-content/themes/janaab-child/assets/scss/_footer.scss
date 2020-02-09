@@ -1,34 +1,5 @@
 // footer style
 
-/*
-.site-footer{	
-	.footer-widgets{
-		ul{
-			li{
-				position: relative;
-				&:before{
-					position: absolute;
-					left: 0;
-					margin: 0;
-					top: 0;
-					@include common-transition;
-				}
-				&:hover,&:focus{
-					&:before{@include transform(scale(1.1));}
-				}
-				a{
-					text-decoration: none;
-					outline: none;
-					&:hover{
-						color: $color-hover;
-					}
-				}
-			}
-		}
-	}
-}
-*/
-
 .site-footer{
 	background-color: $color-hover2;
 	background-image: url(../images/footer-bg.jpg);
