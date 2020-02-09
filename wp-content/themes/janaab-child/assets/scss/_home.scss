@@ -4,7 +4,29 @@
 	.img{margin-bottom: 15px;}
 	.title{margin-bottom: 15px;}
 	.link{
-		a{color:$color-hover2;}
+		a{
+			color:$color-hover2;
+			font-size: 1.3rem;
+			position: relative;
+			&:after{
+				content: '';
+				height: 1px;
+				width: 0;
+				background-color: $color-hover2;
+				@include common-transition(all 0.3s ease-out);
+				position: absolute;				
+				left: auto;
+				right: 0;
+				bottom:0;
+			}
+			&:hover,&:focus{
+				&:after{width: calc(100% - 25px);}
+			}
+		}
 	}
 }
 
+.new-ideas-sec{
+	.row{margin: 0 -5px;}
+	.col-lg-4{padding: 0 5px;}
+}
