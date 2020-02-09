@@ -1,7 +1,9 @@
 /* common class */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
-*{box-sizing: border-box;}
+*{
+	box-sizing: border-box;
+}
 body{
 	font-size: 1rem;
 	line-height: 2rem;
@@ -39,8 +41,20 @@ ul{
 
 .bg-gray{background-color: $color-gray;}
 .bg-black{background-color: $color-site;}
+.bg-blue{background-color: $color-hover2;}
 
+.bg-none{background: none !important;}
+.bg-img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
+.col-full{
+	background: none !important;
+	width: 100%;
+	box-sizing: border-box;
+}
 .common-sec{
 	padding: 3rem 0;
 }
@@ -48,11 +62,12 @@ ul{
 	padding: 0.5rem 1.5rem;
 	border-radius: 0;
 	background-color: $color-hover;
-	color: $color-site;
+	color: $color-white;
 	border-radius: 2rem;
+	min-width: 150px;
 	text-transform: uppercase;
 	&:hover,&:focus{
-		color: $color-site;
+		color: $color-white;
 		@include transform(translateY(-1px));
 	}
 }
@@ -118,4 +133,35 @@ ul{
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
+}
+
+.slick-arrow{
+	background-color: transparent !important;
+	background-repeat: no-repeat;
+	position: center;
+	margin: 0px !important;
+	height: 40px;
+	width: 40px;
+	line-height: 50px;
+	text-align: center;
+}
+button.slick-prev{
+	left: -40px;
+	&:before{
+		content: '\f104';
+		color: $color-site;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 50px;
+		line-height: 35px;
+	}
+}
+button.slick-next{
+	right: -40px;
+	&:before{
+		content: '\f105';
+		color: $color-site;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 50px;
+		line-height: 35px;
+	}
 }

@@ -30,3 +30,42 @@
 	.row{margin: 0 -5px;}
 	.col-lg-4{padding: 0 5px;}
 }
+
+.pattern-books-bx{
+	padding: 5rem 1rem;
+	color: #fff;
+	.common-btn{margin: 0.5rem}
+}
+
+.our-work-sec{
+	min-height: 500px;
+	@extend %d-flex;
+	@extend %flex-wrap;
+	align-items: center;
+}
+
+.inspirations-bx,
+.all-new-bx-img{
+	padding: 10px;
+}
+
+.all-new-sec{
+	.col-full{padding-right: 0;}
+	.row{margin:0;}
+}
+.all-new-for-slider{
+	.slick-arrow{}
+	button.slick-prev{
+		top: auto;
+		left: 0;
+		bottom: -30px;
+		transform: none;
+	}
+	button.slick-next{
+		top: auto;
+		left: 60px;
+		right: auto;
+		bottom: -30px;
+		transform: none;
+	}
+}
